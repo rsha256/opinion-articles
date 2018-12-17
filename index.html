@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1.0" name="viewport" />
+  <title>Op-Ed Website</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" media="screen,projection" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="screen,projection" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+</head>
+<body id="main">
+
+<!-- Modal Trigger -->
+<a class="waves-effect waves-light btn modal-trigger right z-depth-3 right-space" href="#modal1"><i class="material-icons icon-flipped">reply</i><span class="share-btn">&nbsp;Share&nbsp;</span></a>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="animated zoomIn">
+    <h3 class="yellow-text">The necessity of Technology</h3>
+    <h6 class="white-text">By: Rahul Shah</h6>
+  </div>
+
+  <div class="animated rollIn row">
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">What is Technology?</span>
+        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="animated slideInRight carousel carousel-slider center">
+    <div class="carousel-fixed-item center"></div>
+    <div class="carousel-item red white-text" href="#one!">
+      <h2>Op-Ed</h2>
+      <p class="white-text">My op-ed: Programming!</p>
+    </div>
+    <div class="carousel-item amber white-text" href="#two!">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+    <div class="carousel-item green white-text" href="#three!">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+    </div>
+  </div>
+
+  <p>Some text to enable scrolling. dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling. dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+<!-- FAB -->
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red z-depth-5 waves-effect waves-light" id="changeBackground">
+    <i class="large material-icons">arrow_forward</i> </a>
+</div>
+
+<!-- Progress Bar -->
+<div class="footer">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/background.js"></script>
+
+<script type='text/javascript'>
+
+  var instance = M.Carousel.init({
+    fullWidth: true,
+    indicators: true
+  });
+
+  // Or with jQuery
+
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+</script>
+
+</body>
+</html>
