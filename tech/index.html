@@ -7,8 +7,8 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" media="screen,projection" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" media="screen,projection" rel="stylesheet" type="text/css" />
+  <link href="css/materialize.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
 </head>
 <body id="main">
@@ -17,13 +17,13 @@
 <a class="waves-effect waves-light btn modal-trigger right z-depth-3 right-space" href="#modal1"><i class="material-icons icon-flipped">reply</i><span class="share-btn">&nbsp;Share&nbsp;</span></a>
 
 <!-- Modal Structure -->
-<div id="modal1" class="modal">
+<div class="modal" id="modal1">
   <div class="modal-content">
     <h4>Modal Header</h4>
     <p>A bunch of text</p>
   </div>
   <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    <a class="modal-close waves-effect waves-green btn-flat" href="#!">Agree</a>
   </div>
 </div>
 
@@ -99,7 +99,7 @@
     indicators: true
   });
 
-  $(document).ready(function(){
+  $(document).ready(function () {
     $('.modal').modal();
   });
 </script>

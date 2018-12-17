@@ -7,13 +7,13 @@ function changeImg() {
   let body = document.getElementsByTagName('body')[0];
   switch (counter) {
     case 0:
-      body.style.backgroundImage = 'url(../lang/img/pcb.jpg)';
+      body.style.backgroundImage = 'url(../tech/img/pcb.jpg)';
       break;
     case 1:
-      body.style.backgroundImage = 'url(../lang/img/globe.jpg)';
+      body.style.backgroundImage = 'url(../tech/img/globe.jpg)';
       break;
     case 2:
-      body.style.backgroundImage = 'url(../lang/img/computer-tech.jpg)';
+      body.style.backgroundImage = 'url(../tech/img/computer-tech.jpg)';
       break;
     default:
       body.style.backgroundColor = 'white';
