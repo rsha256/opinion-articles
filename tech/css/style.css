@@ -69,3 +69,7 @@ body {
 .right-space {
   margin-right: 3vw;
 }
+
+.spacer {
+  height: 10vh;
+}

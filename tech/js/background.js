@@ -8,6 +8,7 @@ document.getElementById('myCard1').style.display = 'none';
 document.getElementById('myCard2').style.display = 'none';
 document.getElementById('myCard3').style.display = 'none';
 document.getElementById('myCard4').style.display = 'none';
+document.getElementById('carousel').style.display = 'none';
 
 // onClick executes the following:
 function changeImg() {
@@ -31,6 +32,8 @@ function changeImg() {
       document.getElementById('myCard3').style.display = 'none';
       document.getElementById('myCard4').style.display = 'block';
     case 4:
+      document.getElementById('myCard4').style.display = 'none';
+      document.getElementById('carousel').style.display = 'block';
       body.style.backgroundImage = 'url(../tech/img/ai.jpg)';
     default:
       body.style.backgroundColor = 'white';
