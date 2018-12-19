@@ -7,10 +7,13 @@ function changeImg() {
   let body = document.getElementsByTagName('body')[0];
   switch (counter) {
     case 0:
-      body.style.backgroundImage = 'url(../tech/img/pcb.jpg)';
+      document.getElementById('myCard').style.display = 'none';
+      document.getElementById('myCard1').style.display = 'block';
+      body.style.backgroundImage = 'url(../tech/img/blank.png)';
       break;
     case 1:
-      body.style.backgroundImage = 'url(../tech/img/globe.jpg)';
+      document.getElementById('myCard1').style.display = 'none';
+      document.getElementById('myCard2').style.display = 'block';
       break;
     case 2:
       body.style.backgroundImage = 'url(../tech/img/computer-tech.jpg)';
@@ -20,4 +23,9 @@ function changeImg() {
   }
 
   counter++;
+}
+
+function scroller() {
+  let scrolled = counter * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
 }

@@ -32,7 +32,7 @@
     <a href="#" class="fa fa-reddit"></a>
   </div>
   <div class="modal-footer">
-    <a class="modal-close waves-effect waves-green btn-flat" href="#!">Agree</a>
+    <a class="modal-close waves-effect waves-green btn-flat" href="#!">Nah, I'm good</a>
   </div>
 </div>
 
@@ -42,9 +42,21 @@
     <h6 class="white-text">By: Rahul Shah</h6>
   </div>
 
+  <!-- c0 -->
   <div class="animated rollIn row">
     <div class="card blue-grey darken-1">
-      <div class="card-content white-text">
+      <div id="myCard" class="card-content white-text" style="display: block">
+        <span class="card-title">What are Necessities</span>
+        <p>We hear the word all the time, but what actually is technology? </p>
+        <p>The Oxford Dictionary defines it as: "The application of scientific knowledge for practical purposes, especially in industry."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- c1 -->
+  <div class="animated rollIn row">
+    <div class="card blue-grey darken-1">
+      <div id="myCard1" class="card-content white-text" style="display: none">
         <span class="card-title">What is Technology?</span>
         <p>We hear the word all the time, but what actually is technology? </p>
         <p>The Oxford Dictionary defines it as: "The application of scientific knowledge for practical purposes, especially in industry."</p>
@@ -52,6 +64,18 @@
     </div>
   </div>
 
+  <!-- c2 -->
+  <div class="animated rollIn row">
+    <div class="card blue-grey darken-1">
+      <div id="myCard2" class="card-content white-text" style="display: none">
+        <span class="card-title">How has Technology helped us?</span>
+        <p>We hear the word all the time, but what actually is technology? </p>
+        <p>The Oxford Dictionary defines it as: "The application of scientific knowledge for practical purposes, especially in industry."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel -->
   <div class="animated slideInRight carousel carousel-slider center">
     <div class="carousel-fixed-item center"></div>
     <div class="carousel-item red white-text" href="#one!">
@@ -95,24 +119,6 @@
 <script src="js/init.js"></script>
 <script src="js/background.js"></script>
 
-<script type='text/javascript'>
-
-  var instance = M.Carousel.init({
-    fullWidth: true,
-    indicators: true
-  });
-
-  // Or with jQuery
-
-  $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true
-  });
-
-  $(document).ready(function () {
-    $('.modal').modal();
-  });
-</script>
 
 </body>
 </html>
