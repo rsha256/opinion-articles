@@ -1,14 +1,10 @@
+// Hide elements beforehand
+document.getElementById('carousel').style.display = 'none';
+
 let el = document.getElementById("changeBackground");
 el.addEventListener("click", changeImg, false);
 
 let counter = 0;
-
-// Hide elements beforehand
-document.getElementById('myCard1').style.display = 'none';
-document.getElementById('myCard2').style.display = 'none';
-document.getElementById('myCard3').style.display = 'none';
-document.getElementById('myCard4').style.display = 'none';
-document.getElementById('carousel').style.display = 'none';
 
 // onClick executes the following:
 function changeImg() {
@@ -34,7 +30,10 @@ function changeImg() {
     case 4:
       document.getElementById('myCard4').style.display = 'none';
       document.getElementById('carousel').style.display = 'block';
-      body.style.backgroundImage = 'url(../tech/img/ai.jpg)';
+      body.style.backgroundImage = 'url(../tech/img/globe.jpg)';
+    case 5:
+      document.getElementById('carousel').style.display = 'none';
+      document.getElementById('credits').style.display = 'block';
     default:
       body.style.backgroundColor = 'white';
   }
@@ -43,6 +42,6 @@ function changeImg() {
 }
 
 function scroller() {
-  let scrolled = (20 * counter) + 20;
+  let scrolled = (15 * counter) + 15;
   document.getElementById("myBar").style.width = scrolled + "%";
 }

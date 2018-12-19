@@ -73,3 +73,7 @@ body {
 .spacer {
   height: 10vh;
 }
+
+.ai {
+  background-image: url('../img/ai.jpg');
+}
