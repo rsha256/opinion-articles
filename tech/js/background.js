@@ -27,15 +27,23 @@ function changeImg() {
     case 3:
       document.getElementById('myCard3').style.display = 'none';
       document.getElementById('myCard4').style.display = 'block';
+      break;
     case 4:
       document.getElementById('myCard4').style.display = 'none';
       document.getElementById('carousel').style.display = 'block';
       body.style.backgroundImage = 'url(../tech/img/globe.jpg)';
+      break;
     case 5:
       document.getElementById('carousel').style.display = 'none';
+      document.getElementById('carousel2').style.display = 'block';
+      break;
+    case 6:
+      document.getElementById('carousel2').style.display = 'none';
       document.getElementById('credits').style.display = 'block';
+      break;
     default:
       body.style.backgroundColor = 'white';
+      break;
   }
 
   counter++;
