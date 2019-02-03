@@ -1,10 +1,20 @@
 // Hide elements beforehand
 document.getElementById('carousel').style.display = 'none';
 
+let counter = 0;
+
 let el = document.getElementById("changeBackground");
 el.addEventListener("click", changeImg, false);
 
-let counter = 0;
+let le = document.getElementById("changeBackgroundBack");
+le.addEventListener("click", changeImg2, false);
+
+function changeImg2() {
+  // if (counter > 0)
+  counter--;counter--;
+  changeImg(); // not recursion but still cool :P
+  console.log("yee")
+}
 
 // onClick executes the following:
 function changeImg() {
@@ -50,6 +60,7 @@ function changeImg() {
 }
 
 function scroller() {
-  let scrolled = (15 * counter) + 15;
+  let scrolled = (15 * counter) + 25;
+  console.log(scrolled);
   document.getElementById("myBar").style.width = scrolled + "%";
 }
