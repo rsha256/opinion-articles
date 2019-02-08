@@ -29,25 +29,24 @@ function changeImg() {
     case 1:
       document.getElementById('myCard1').style.display = 'none';
       document.getElementById('myCard2').style.display = 'block';
+      body.style.backgroundImage = 'url(../tech/img/ai.jpg)';
       break;
     case 2:
       document.getElementById('myCard2').style.display = 'none';
       document.getElementById('myCard3').style.display = 'block';
+      body.style.backgroundImage = 'url(../tech/img/blank.png)';
       break;
     case 3:
       document.getElementById('myCard3').style.display = 'none';
       document.getElementById('myCard4').style.display = 'block';
+      body.style.backgroundImage = 'url(../tech/img/globe.jpg)';
       break;
     case 4:
       document.getElementById('myCard4').style.display = 'none';
       document.getElementById('carousel').style.display = 'block';
-      body.style.backgroundImage = 'url(../tech/img/globe.jpg)';
+      body.style.backgroundImage = 'url(../tech/img/blank.png)';
       break;
     case 5:
-      document.getElementById('carousel').style.display = 'none';
-      document.getElementById('carousel2').style.display = 'block';
-      break;
-    case 6:
       document.getElementById('carousel2').style.display = 'none';
       document.getElementById('credits').style.display = 'block';
       break;

@@ -152,13 +152,29 @@
 <!-- FAB -->
 <div class="fixed-action-btn">
   <a class="btn-floating btn-large red z-depth-5 waves-effect waves-light" id="changeBackground">
-    <i class="large material-icons">arrow_forward</i> </a>
+    <i class="large material-icons">chevron_right</i> </a>
 </div>
 
 <!-- FAB Left -->
 <div class="left" style="position: fixed;bottom: 23px;padding-top: 15px; left: 23px;">
   <a class="btn-floating btn-large red z-depth-5 waves-effect waves-light" id="changeBackgroundBack">
-    <i class="large material-icons">arrow_back</i> </a>
+    <i class="large material-icons">chevron_left</i> </a>
+</div>
+
+<!-- FAB Help -->
+<div class="left" style="position: fixed;top: 23px;padding-bottom: 15px; left: 23px;">
+  <a class="btn-floating btn-large red z-depth-5 waves-effect waves-light modal-trigger" href="#help">?</a>
+</div>
+<!-- Help Modal Structure -->
+<div id="help" class="modal">
+  <div class="modal-content">
+    <h4>Is there a problem?</h4>
+    <p>Reloading will fix your problem 99.9999% of the time.
+       <br />If it doesn't then <a href="mailto:rahuldshah3@gmail.com">email me</a>.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Thanks!</a>
+  </div>
 </div>
 
 <!-- Progress Bar -->
